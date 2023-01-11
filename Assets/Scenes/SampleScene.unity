@@ -123,6 +123,255 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &440174521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 440174523}
+  - component: {fileID: 440174522}
+  m_Layer: 0
+  m_Name: InputActionTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &440174522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440174521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35de098dcd1e7074e9cc3d8b3fc18e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move:
+    m_Name: Move
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 504131f0-5529-49cc-8c07-c68e867ac3d0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e9a9b9f4-30d1-41bb-9c1a-e1cb338d3778
+      m_Path: <Mouse>/leftButton
+      m_Interactions: Hold(duration=2)
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 0
+    - m_Name: 
+      m_Id: b1e043d9-9d8f-48c5-a961-65263030fb50
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 0
+    m_Flags: 0
+  run:
+    m_Name: Run
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: fa837387-9a49-45ed-9046-2e45932c1326
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  axis:
+    m_Name: Axis
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ec429616-addc-4c07-a3cf-4cd52eccc0ef
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 1D Axis
+      m_Id: 7b27d6a0-98c7-4fad-a92d-7b1fc16a2fa6
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Axis
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 98e32fa1-ad91-47c1-aaa5-60657f7baa4f
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Axis
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: fa016b7e-c3b7-48e5-8004-9e3f43a811ea
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Axis
+      m_Flags: 8
+    - m_Name: 1D Axis
+      m_Id: bb4ac096-d46d-4246-b0cd-4cf7bfe53387
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Axis
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: faaece58-1ce8-43ca-821c-0923dbd0aeb7
+      m_Path: <Keyboard>/downArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Axis
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 679dca85-331f-4bdf-88e5-a910eb549c04
+      m_Path: <Keyboard>/upArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Axis
+      m_Flags: 8
+    m_Flags: 0
+  vector2D:
+    m_Name: Vector 2D
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6ab18f68-3d8c-4ae6-a163-1e571d4932af
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 792545e5-bfe6-4c3b-ba83-57ee933038bb
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Vector 2D
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 7482c3bd-c286-4ba0-b286-5e7e35f244e2
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Vector 2D
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 76938cad-10c8-4629-9d80-c3543f35f7b0
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Vector 2D
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 1a1aa740-2a50-49fc-81f7-20c0dcaf43ba
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Vector 2D
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 4a5e8be3-3030-431d-8cc6-6134e350e413
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Vector 2D
+      m_Flags: 8
+    m_Flags: 0
+  btnOne:
+    m_Name: Btn One
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 0c997fec-b2dd-4956-8b11-5afccbcc448a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: One Modifier
+      m_Id: 35dd6565-2e96-4be3-9de5-313afe237071
+      m_Path: OneModifier
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Btn One
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 2ed25968-9676-4da0-8335-6abdc8818ae3
+      m_Path: <Keyboard>/c
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Btn One
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 0cb9078c-c63a-4da0-a59b-92093dec51a3
+      m_Path: <Keyboard>/v
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Btn One
+      m_Flags: 8
+    - m_Name: Two Modifiers
+      m_Id: 590c107e-006c-43ed-8728-e684d4200dcd
+      m_Path: TwoModifiers
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Btn One
+      m_Flags: 4
+    - m_Name: modifier1
+      m_Id: 56785309-9689-4c0d-8f32-6a5b26c53325
+      m_Path: <Keyboard>/z
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Btn One
+      m_Flags: 8
+    - m_Name: modifier2
+      m_Id: f1a19766-9063-4772-8970-b9a52530564e
+      m_Path: <Keyboard>/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Btn One
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 890c361e-df26-47df-a2d0-e63749bee4d8
+      m_Path: <Keyboard>/b
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Btn One
+      m_Flags: 8
+    m_Flags: 0
+--- !u!4 &440174523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440174521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
