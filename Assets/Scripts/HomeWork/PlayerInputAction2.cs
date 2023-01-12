@@ -4,12 +4,12 @@ using UnityEngine.InputSystem;
 
 namespace HomeWork
 {
-    public class PlayerInputAction : MonoBehaviour
+    public class PlayerInputAction2 : MonoBehaviour
     {
-        [Header("移动控制")] public InputAction move;
-        [Header("跳跃控制")] public InputAction jump;
-        [Header("开火控制")] public InputAction fire;
-
+        // [Header("移动控制")] public InputAction move;
+        // [Header("跳跃控制")] public InputAction jump;
+        // [Header("开火控制")] public InputAction fire;
+        private PlayerActionTest PlayerActionTest;
         public GameObject bullet;
         private Rigidbody rb;
         private Vector3 dir;
@@ -17,17 +17,19 @@ namespace HomeWork
         private void Start()
         {
             rb = this.GetComponent<Rigidbody>();
-            move.Enable();
-            jump.Enable();
-            fire.Enable();
-            jump.performed += Jump;
-            fire.performed += Fire;
+            PlayerActionTest = new PlayerActionTest();
+            PlayerActionTest.Enable();
+            // move.Enable();
+            // jump.Enable();
+            // fire.Enable();
+            PlayerActionTest.Player.Jump.performed += Jump;
+            PlayerActionTest.Player.Fire.performed += Fire;
         }
 
 
         private void Update()
         {
-            var pos = move.ReadValue<Vector2>();
+            var pos = PlayerActionTest.Player.Move.ReadValue<Vector2>();
             dir = new Vector3(pos.x, 0, pos.y);
             rb.AddForce(dir);
         }
